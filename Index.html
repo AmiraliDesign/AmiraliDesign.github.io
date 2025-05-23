@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirali Mostajabian | Brand Identity Designer</title>
+    <meta name="description" content="Professional graphic designer specializing in brand identity and visual communication. Creating meaningful designs that tell compelling brand stories.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .text-accent {
+            color: #8b5a2b;
+        }
+        
+        .bg-accent {
+            background-color: #8b5a2b;
+        }
+        
+        .border-accent {
+            border-color: #8b5a2b;
+        }
+        
+        .hover\:bg-accent:hover {
+            background-color: #8b5a2b;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        .project-overlay {
+            transition: opacity 0.3s ease;
+        }
+        
+        .menu-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #8b5a2b;
+            transition: width 0.3s;
+        }
+        
+        .menu-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .portfolio-item {
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px #8b5a2b;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 py-4 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#home" class="text-xl font-medium">AMIRALI MOSTAJABIAN</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="menu-link">Home</a>
+                <a href="#portfolio" class="menu-link">Portfolio</a>
+                <a href="#about" class="menu-link">About</a>
+                <a href="#contact" class="menu-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 absolute w-full left-0 shadow-lg">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#portfolio" class="block py-2">Portfolio</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-light mb-6 leading-tight">
+                        Crafting <span class="text-accent">meaningful</span> brand identities
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
+                        I'm Amirali Mostajabian, a brand identity designer focused on creating visual systems that tell compelling stories and build lasting connections.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#portfolio" class="px-8 py-3 bg-accent text-white hover:bg-opacity-90 transition">View Work</a>
+                        <a href="#contact" class="px-8 py-3 border border-gray-900 hover:bg-gray-100 transition">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-full max-w-md">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Brand identity design work" 
+                             class="w-full h-auto shadow-lg rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-light mb-12 text-center">Selected Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card relative overflow-hidden group portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Brand Identity Project" 
+                         class="w-full h-80 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 flex items-center justify-center p-6">
+                        <div class="text-white text-center">
+                            <h3 class="text-xl font-medium mb-2">Nova Coffee</h3>
+                            <p class="text-gray-300 mb-4">Complete brand identity system for specialty coffee roastery</p>
+                            <a href="#" class="text-accent font-medium">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card relative overflow-hidden group portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Packaging Design Project" 
+                         class="w-full h-80 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 flex items-center justify-center p-6">
+                        <div class="text-white text-center">
+                            <h3 class="text-xl font-medium mb-2">Aether Skincare</h3>
+                            <p class="text-gray-300 mb-4">Sustainable packaging system for organic skincare line</p>
+                            <a href="#" class="text-accent font-medium">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card relative overflow-hidden group portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Visual Identity Project" 
+                         class="w-full h-80 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 flex items-center justify-center p-6">
+                        <div class="text-white text-center">
+                            <h3 class="text-xl font-medium mb-2">Lumina Festival</h3>
+                            <p class="text-gray-300 mb-4">Visual identity for contemporary arts festival</p>
+                            <a href="#" class="text-accent font-medium">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#portfolio" class="inline-block px-8 py-3 border border-gray-900 hover:bg-gray-100 transition">
+                    View Full Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-light mb-4">Portfolio</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl">A curated selection of brand identity, packaging, and visual communication projects.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="flex flex-col md:flex-row border-b border-gray-200 pb-8 portfolio-item">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Brand Identity Project" 
+                             class="w-full h-auto rounded shadow-sm">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-medium mb-2">Nova Coffee</h3>
+                        <p class="text-gray-600 mb-4">Brand Identity</p>
+                        <p class="text-gray-700 mb-4">Complete visual identity system for a specialty coffee roastery, including logo, packaging, and collateral materials.</p>
+                        <a href="#" class="text-accent font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="flex flex-col md:flex-row border-b border-gray-200 pb-8 portfolio-item">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Packaging Design Project" 
+                             class="w-full h-auto rounded shadow-sm">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-medium mb-2">Aether Skincare</h3>
+                        <p class="text-gray-600 mb-4">Packaging Design</p>
+                        <p class="text-gray-700 mb-4">Sustainable packaging system for an organic skincare line, focusing on minimal waste and premium unboxing experience.</p>
+                        <a href="#" class="text-accent font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="flex flex-col md:flex-row border-b border-gray-200 pb-8 portfolio-item">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Visual Identity Project" 
+                             class="w-full h-auto rounded shadow-sm">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-medium mb-2">Lumina Festival</h3>
+                        <p class="text-gray-600 mb-4">Visual Identity</p>
+                        <p class="text-gray-700 mb-4">Dynamic identity system for a contemporary arts festival, with flexible applications across print and digital media.</p>
+                        <a href="#" class="text-accent font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="flex flex-col md:flex-row border-b border-gray-200 pb-8 portfolio-item">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Corporate Branding Project" 
+                             class="w-full h-auto rounded shadow-sm">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-medium mb-2">Horizon Financial</h3>
+                        <p class="text-gray-600 mb-4">Corporate Branding</p>
+                        <p class="text-gray-700 mb-4">Complete rebrand for financial services firm, establishing a modern, trustworthy visual language across all touchpoints.</p>
+                        <a href="#" class="text-accent font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="flex flex-col md:flex-row border-b border-gray-200 pb-8 portfolio-item">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Editorial Design Project" 
+                             class="w-full h-auto rounded shadow-sm">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-medium mb-2">Atlas Magazine</h3>
+                        <p class="text-gray-600 mb-4">Editorial Design</p>
+                        <p class="text-gray-700 mb-4">Redesign of travel magazine with innovative grid system and custom typography for enhanced readability and visual impact.</p>
+                        <a href="#" class="text-accent font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="flex flex-col md:flex-row pb-8 portfolio-item">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Wayfinding System Project" 
+                             class="w-full h-auto rounded shadow-sm">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-medium mb-2">Metro Arts Center</h3>
+                        <p class="text-gray-600 mb-4">Wayfinding System</p>
+                        <p class="text-gray-700 mb-4">Comprehensive wayfinding solution for cultural complex, balancing functional clarity with artistic expression.</p>
+                        <a href="#" class="text-accent font-medium">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-12 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Amirali Mostajabian" 
+                         class="w-full max-w-xs rounded-full mx-auto shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-light mb-6">About Me</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        With over 8 years of experience in brand identity design, I help businesses and organizations articulate their unique stories through thoughtful visual systems. My approach combines strategic thinking with meticulous craftsmanship to create identities that are both distinctive and enduring.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        I believe great design should be invisible—it should feel inevitable, not imposed. My work is rooted in research, collaboration, and a deep understanding of how visual language shapes perception.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed">
+                        When I'm not designing, you can find me exploring typography history, photographing urban details, or perfecting my pour-over coffee technique.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white px-6 py-4 shadow-sm rounded">
+                            <h4 class="font-medium mb-1">Education</h4>
+                            <p class="text-gray-600">MFA Visual Communication</p>
+                            <p class="text-gray-500 text-sm">University of Art & Design</p>
+                        </div>
+                        <div class="bg-white px-6 py-4 shadow-sm rounded">
+                            <h4 class="font-medium mb-1">Clients</h4>
+                            <p class="text-gray-600">50+ brands worldwide</p>
+                            <p class="text-gray-500 text-sm">Since 2015</p>
+                        </div>
+                        <div class="bg-white px-6 py-4 shadow-sm rounded">
+                            <h4 class="font-medium mb-1">Recognition</h4>
+                            <p class="text-gray-600">Award-winning work</p>
+                            <p class="text-gray-500 text-sm">AIGA, D&AD, Type Directors Club</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-light mb-2">Get in Touch</h2>
+                <p class="text-gray-600 mb-12">Interested in working together or have a project in mind? Let's start a conversation.</p>
+                
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-accent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-accent">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-accent"></textarea>
+                            </div>
+                            <button type="submit" class="px-8 py-3 bg-accent text-white hover:bg-opacity-90 transition rounded">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-50 p-8 h-full rounded">
+                            <h3 class="text-xl font-medium mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope text-accent mt-1 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p class="text-gray-600">hello@amiralidesign.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-accent mt-1 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Based in</h4>
+                                        <p class="text-gray-600">Toronto, Canada</p>
+                                        <p class="text-gray-600">Available for remote work worldwide</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-accent mt-1 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Availability</h4>
+                                        <p class="text-gray-600">Currently accepting new projects</p>
+                                        <p class="text-gray-600">Lead time: 2-3 weeks</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-12">
+                                <h4 class="font-medium mb-4">Follow Me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-700 hover:text-accent transition">
+                                        <i class="fab fa-behance text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-700 hover:text-accent transition">
+                                        <i class="fab fa-instagram text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-700 hover:text-accent transition">
+                                        <i class="fab fa-linkedin-in text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-700 hover:text-accent transition">
+                                        <i class="fab fa-dribbble text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-xl">AMIRALI MOSTAJABIAN</p>
+                    <p class="text-gray-400 mt-2">Brand Identity & Visual Communication</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
+                        <a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a>
+                        <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                        <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                    </div>
+                    <p class="text-gray-400 text-sm">© 2023 Amirali Mostajabian. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message. I will get back to you soon!');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
